@@ -24,3 +24,15 @@ spec:
             - containerPort: {{ .Values.service.targetPort }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          livenessProbe:
+            httpGet:
+              path: /
+              port: {{ .Values.service.targetPort }}
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: {{ .Values.service.targetPort }}
+              port: 8080
+            initialDelaySeconds: 15
+            periodSeconds: 10
