@@ -39,6 +39,7 @@ AWS credentials configured (~/.aws/credentials or environment variables)
 | Variable             | Description     | Default Value |
 | ----------------- | -------------------|----------------------------------------------- |
 | Region | AWS region for deployment | eu-west-1|
+| AZs    | Availability zones in eu-west-1 | eu-west-1a, eu-west-1b |
 | vpc_name | Name of the VPC | my-vpc |
 | vpc_cidr_block | CIDR block for the VPC | 10.0.0.0/16
 | private_subnets_cidr_block | CIDR block of private subnets | 10.0.1.0/24, 10.0.2.0/24
