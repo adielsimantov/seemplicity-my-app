@@ -4,6 +4,9 @@
 
 This repository contains a GitHub Actions CI/CD pipeline for building, pushing, and deploying my-app using AWS Elastic Container Registry (ECR) and ArgoCD on EKS. The pipeline automates the process of delivering updates efficiently and securely.
 
+## Terraform
+ For Terraform README file [click here](terraform/README.md)
+
 ## Pipeline Workflow
 
 ### Build Stage
