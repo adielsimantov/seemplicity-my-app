@@ -1,1 +1,0 @@
-# seemplicity-my-app
