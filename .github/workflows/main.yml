@@ -53,6 +53,9 @@ jobs:
           command: login ${{ env.ARGOCD_SERVER }}
           options: --username ${{ env.ARGOCD_USERNAME }} --password ${{ env.ARGOCD_PASSWORD }} --insecure --skip-test-tls --http-retry-max 3 --grpc-web
 
+      - name: check image tag
+        run: |
+          echo ${{ vars.ECR_REPO_URL }}:$IMAGE_TAG
 
       - name: Set new image for helm parameter
         uses: clowdhaus/argo-cd-action/@main
