@@ -78,3 +78,9 @@ For production releases: Merge changes into the main branch to trigger build and
 Check GitHub Actions for pipeline execution details.
 
 Verify the deployed application via ArgoCD.
+
+## Application usage
+In order to validate that the application is working properly:
+1. Send a POST request to the app, it should count the request.
+2. Seng a GET request to the app, it should return the POST requests count
+
