@@ -2,7 +2,6 @@ replicaCount: 3
 
 image:
   repository: 431887213634.dkr.ecr.eu-west-1.amazonaws.com/seemplicity/my-app
-  tag: prod
   pullPolicy: Always
 
 imagePullSecrets:
