@@ -35,7 +35,7 @@ jobs:
 
       - name: Push Docker image to ECR
         run: |
-          docker push ${{ vars.ECR_REPO_URL }}:$IMAGE_TAG
+          docker push ${{ vars.ECR_REPO_URL }}:${GITHUB_SHA::7}
 
   deploy:
     runs-on: ubuntu-latest
